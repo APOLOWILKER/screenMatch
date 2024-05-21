@@ -1,26 +1,25 @@
-import challenge.Calculadora;
-import challenge.Musica;
+import br.com.alura.screenmatch.modelo.Movie;
 
 public class Main {
     public static void main(String[] args) {
         /*
-        * Pate da Movie myMovier esta criando a gaveta para guardar
-        * Parte da new Movie esta referenciando e guardando
+        * Pate da br.com.alura.screenmatch.modelo.Movie myMovier esta criando a gaveta para guardar
+        * Parte da new br.com.alura.screenmatch.modelo.Movie esta referenciando e guardando
         */
-        Movie myMovie = new Movie();
-        myMovie.nameMovie = "O poderoso chefão";
-        myMovie.releaseYear = 1970;
-        myMovie.minutesDuration = 180;
+        Movie favoriteMovie = new Movie();
+        favoriteMovie.nameMovie = "O poderoso chefão";
+        favoriteMovie.setReleaseYear(1970);
+        favoriteMovie.setMinutesDuration(180);
+        favoriteMovie.setIncludedPlan(true);
 
 
 
-        myMovie.evaluate(8);
-        myMovie.evaluate(5);
-        myMovie.evaluate(10);
+        favoriteMovie.evaluate(8);
+        favoriteMovie.evaluate(5);
+        favoriteMovie.evaluate(10);
 
-        myMovie.displayTechnicalSheet();
-        System.out.println(myMovie.getAverageReviews());
-
+        favoriteMovie.displayTechnicalSheet();
+        System.out.println(favoriteMovie.getAverageReviews());
 
     }
 }
