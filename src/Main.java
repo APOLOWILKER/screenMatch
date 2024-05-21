@@ -13,6 +13,7 @@ public class Main {
         myMovie.minutesDuration = 180;
 
 
+
         myMovie.evaluate(8);
         myMovie.evaluate(5);
         myMovie.evaluate(10);

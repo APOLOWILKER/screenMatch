@@ -11,8 +11,12 @@ public class Movie {
         System.out.println("Movie Name: " + nameMovie);
         System.out.println("Release Year: " + releaseYear);
         System.out.println("Include you Plan? : " + isIncludedPlan);
-        System.out.println("Total evaluation: " + totalEvaluation);
+        System.out.println("Total evaluation: " + getTotalEvaluation());
         System.out.println("Time Duration: " + minutesDuration + " minutes");
+    }
+
+    int getTotalEvaluation(){
+        return totalEvaluation;
     }
 
     void evaluate(double note){
